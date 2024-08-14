@@ -30,7 +30,7 @@ Provide comprehensive summaries organized by themes - 'General {field} Trends,' 
 """
 
 # Streamlit interface
-st.title("Tekstgenerering med Dynamiske Pladsholdere")
+st.title("Bongo bonk")
 
 # Brugerinput til hver pladsholder
 field = st.text_input("Industry or field", "Digital Strategi")
