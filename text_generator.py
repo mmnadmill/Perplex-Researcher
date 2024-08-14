@@ -56,5 +56,5 @@ if st.button("Generate Text"):
         experiences=experiences
     )
     # Vis den genererede tekst
-    st.subheader("Genereret Tekst")
+    st.subheader("Generated Text")
     st.write(generated_text)
