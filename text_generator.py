@@ -58,18 +58,3 @@ if st.button("Generate Text"):
     # Vis den genererede tekst
     st.subheader("Generated Text")
     st.write(generated_text)
-
- # Tilføj knap til at kopiere tekst
-    st.markdown(f'''
-        <button onclick="copyToClipboard()">Kopier tekst</button>
-        <script>
-        function copyToClipboard() {{
-            var text = `{generated_text}`;
-            navigator.clipboard.writeText(text).then(function() {{
-                console.log('Text copied to clipboard');
-            }}, function(err) {{
-                console.error('Could not copy text: ', err);
-            }});
-        }}
-        </script>
-        ''', unsafe_allow_html=True)
