@@ -30,20 +30,20 @@ Provide comprehensive summaries organized by themes - 'General {field} Trends,' 
 """
 
 # Streamlit interface
-st.title("Bongo bonk")
+st.title("PromptPerplex")
 
 # Brugerinput til hver pladsholder
-field = st.text_input("Industry or field", "Digital Strategi")
-geographical_area = st.text_input("Geographical or Demographical Areas of Interest", "Europa")
-sector_names = st.text_input("List sector name(s)", "Sundhed, Finans, Detailhandel")
+field = st.text_input("Industry or field", "Digital marketing")
+geographical_area = st.text_input("Geographical or Demographical Areas of Interest", "Europe")
+sector_names = st.text_input("List sector name(s)", "E-commerce, SaaS, Detailhandel")
 strategies = st.text_input("Field-Specific Strategies or Practices", "Digital Transformation, Automatisering")
-keywords = st.text_input("List of Relevant Keywords", "AI, Blockchain, Cloud Computing")
-countries = st.text_input("List of Countries or Regions", "Tyskland, UK, Frankrig")
-tools = st.text_input("Field-Specific Tools or Platforms", "CRM Systemer, AI-drevet Analyse")
-experiences = st.text_input("Field-Specific Experiences or Strategies", "Brugeroplevelse, Brand Konsistens")
+keywords = st.text_input("List of Relevant Keywords", "E-commerce, Digital marketing, SEO, PPC")
+countries = st.text_input("List of Countries or Regions", "Germany")
+tools = st.text_input("Field-Specific Tools or Platforms", "Google analytics 4, Google Ads, Ahrefs")
+experiences = st.text_input("Field-Specific Experiences or Strategies", "Brand consistency, Omnichannel, personalization, Remarketing")
 
 # Knap til at generere tekst
-if st.button("Generer Tekst"):
+if st.button("Generate Text"):
     # Erstat pladsholdere med brugerinput
     generated_text = template.format(
         field=field,
